@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签管理</title>
+    <link rel="stylesheet" href="./css/bootstrap.cerulean.min.css">
+    <style>
+        .footer{
+            padding:30px 0 70px ;
+            text-align: center;
+        }
+        .container p{
+            color: #3186c0;
+        }
+        .row{
+            margin-bottom: 20px;
+        }
+        .container .alert-info{
+            width: 138px;
+            height: 50px;
+            float: left;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .container .alert-info .text-tip{
+            padding-left: 8px;
+            padding-right: 22px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maizi Admin</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="backpage.html"><span class="glyphicon glyphicon-home"></span> 后台首页</a></li>
+                <li><a href="user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+                <li  class="active"><a href="#"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人主页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> 账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <p>TAG标签管理</p>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <form action="" id="addTo" >
+                <div class="col-md-10">
+                    <input type="text" name="tag" value="" class="form-control" placeholder="请输入要添加的标签">
+                </div>
+                <div class="col-md-2">
+                    <input class="btn btn-default" type="submit" value="添加">
+                </div>
+            </form>
+        </div>
+        <div id="tagList">
+           <!-- <div class="alert alert-info" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"> <span aria-hidden="true">&times;</span></button>
+                <strong>bootstrap</strong>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"> <span aria-hidden="true">&times;</span></button>
+                <strong>麦子学院</strong>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"> <span aria-hidden="true">&times;</span></button>
+                <strong>前端课程</strong>
+            </div>-->
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        Copyright @2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+    </div>
+</div>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/label.js"></script>
+
+<script>
+
+    $("#addTo").submit(function (event) {
+    event.preventDefault();
+    var tag=$.trim($("#addTo").find("[name='tag']").val());
+    //将获取的标签存储到localStorage
+    if(tag !== ''){
+    var tagStr='<div class="alert alert-info" role="alert">'+
+          '     <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>\n'+
+          '     <strong>'+ tag + '</strong>\n' +
+          '</div>';
+    $("#tagList").append(tagStr);
+    }
+    $("#addTo").find("[name='tag']").val('');
+    })
+    //页面载入时需要一组标签数据 通过循环将标签插入到#taflist
+    var tag=["bootstrap" ,"麦子学院","前端课堂"];
+    $.each(tag,function (i,v) {
+    for(var i=0;i<tag.length;i++) {
+    var tagStr = '<div class="alert alert-info" role="alert">' +
+        '     <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>\n' +
+        '     <strong>' + v + '</strong>\n' +
+        '</div>';
+    }
+    $("#tagList").html(tagStr);
+    })
+
+
+
+
+    //删除标签
+
+    //动态添加的内容要使用事件监听来进行事件触发
+
+    //点击.close 时获取标签名
+
+    //获取原有的标签列
+
+    //使用$.grep()方法过滤掉要删除的内容
+
+    //将新的标签列表存入localStorage
+
+
+</script>
+</body>
+</html>

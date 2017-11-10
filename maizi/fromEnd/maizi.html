@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麦子学院</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+       .navbar-style{
+            background: #ffffff;
+            border-radius: 0;
+            border-color:#fff;
+            margin-bottom: 0;
+        }
+       .container .navbar-color{
+           color: #40d2b1;
+           font-weight: bolder;
+
+       }
+       .banner{
+           background: url("./images/home-bg.jpg") no-repeat center;
+           background-size: cover;
+       }
+       .banner .cover{
+           color: #ffffff;
+           background: rgba(23,54,48,0.6);
+           padding: 80px 0;
+           text-align: center;
+       }
+       .cover h1{
+           margin: 0;
+           height: 75px;
+           line-height: 75px;
+       }
+       .cover p{
+           margin: 0;
+           height: 34px;
+           line-height: 34px;
+       }
+       .banner .cover img{
+           padding: 24px;
+       }
+       @media (max-width: 900px) {
+           .banner .cover img{
+               width: 90%;
+           }
+       }
+       .text-icon{
+           width: 40px;
+           height: 40px;
+           line-height: 40px;
+           border-radius: 50%;
+           background: #40d2b1;
+           text-align: center;
+           color: #ffffff;
+           font-size: 20px;
+           margin-right: 20px;
+           vertical-align: middle;
+       }
+       .development{
+           padding: 90px 0 80px;
+       }
+       .row .text {
+           text-decoration: none;
+           color: #000;
+           overflow: hidden;
+           letter-spacing: 1px;
+       }
+        .html5{
+            background: #f8f8f8;
+            padding: 80px 0 95px;
+        }
+        .bootstrap{
+            padding: 80px 0 95px ;
+        }
+        .course{
+            background: #f8f8f8;
+            padding: 90px 0 80px;
+        }
+        .course h2{
+            margin: 0 0 30px 0;
+            height: 80px;
+            line-height: 80px;
+        }
+        .list{
+            background: #ffffff;
+            text-align: center;
+            margin-bottom:20px;
+        }
+       .list img{
+           width: 100%;
+       }
+       .btn-custom{
+           height: 38px;
+           width: 136px;
+           border:1px solid #40d2b1;
+           color:#40d2b1;
+           background: #fff;
+           border-radius: 0;
+           margin: 20px 0 30px;
+       }
+       @media screen and (max-width: 480px) {
+           .course .col-xs-6{
+               width:100%;
+           }
+       }
+       .download{
+           padding: 80px 0 80px;
+       }
+       .icon p{
+           float: left;
+           width: 134px;
+           height: 34px;
+           line-height: 34px;
+           text-align: center;
+           background: #40d2b1;
+           color: #ffffff;
+           margin-right: 15px;
+       }
+       @media (max-width: 1000px) {
+            .col-sm-6 img{
+               width: 100%;
+           }
+           .btn-submit{
+               width: 60%;
+           }
+       }
+       .map{
+           background: url("./images/contact-bg.png") no-repeat center;
+           background-size: cover;
+       }
+       .map .link-wheat{
+           background: rgba(23,54,48,0.6);
+           padding: 179px 0;
+           color: #ffffff;
+       }
+       .link-wheat h1{
+           margin-bottom: 20px;
+       }
+       .link-wheat p{
+       }
+       .btn-submit{
+           width: 340px;
+           height: 50px;
+           line-height: 50px;
+           border-radius: 0;
+           background: #40d2b1;
+           color: #ffffff;
+           font-size: 15px;
+           font-weight: bolder;
+       }
+       .inline{
+           margin-bottom: 20px;
+       }
+       .square{
+           height: 50px;
+           border-radius: 0px;
+       }
+       .length{
+          padding-right: 84px;
+       }
+       @media (max-width: 1000px) {
+           .btn-submit{
+               width: 65%;
+           }
+       }
+       .footer{
+           padding:20px 0 70px ;
+           text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-style">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-color" href="#">麦子学院</a>
+        </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">前端开发</a></li>
+                <li><a href="#">最新课程</a></li>
+                <li><a href="#">移动APP</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="banner">
+    <div class="cover">
+        <div class="wow bounceInUp animated">
+            <h1>bootstrap实战课程等你来战！</h1>
+            <p class="text-c">本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员</p>
+            <p>培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端</p>
+            <img src="./images/php.jpg">
+        </div>
+    </div>
+</div>
+<div class="development">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-4 col-md-4 wow slideInUp animated">
+                <a class="text" href="#">
+                    <img src="./images/a.png" class="img-responsive">
+                    <h3>Android开发</h3>
+                    <p>android开发技术交流、问题求助、实战案例分享</p>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 wow slideInUp animated">
+                <a class="text" href="#">
+                    <img src="./images/i.png" class="img-responsive">
+                    <h3>嵌入式底层开发</h3>
+                    <p>iOS开发技术交流,海量iOS实战干货分享</p>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4 wow slideInUp animated">
+                <a class="text" href="#">
+                    <img src="./images/b.png" class="img-responsive">
+                    <h3>Android开发</h3>
+                    <p>底层嵌入式开发、实战案例等技术交流讨论</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="html5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 wow bounceInLeft animated">
+                <h1>HTML5前端开发</h1>
+                <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+                <p><i class="glyphicon glyphicon-grain text-icon"></i>使用HTML与CSS技术轻松实现设备自适应展示</p>
+                <p><i class="glyphicon glyphicon-grain text-icon"></i>清晰明了的语义代码结构，更高的可读性、更利于页面维护</p>
+            </div>
+            <div class="col-sm-6 wow bounceInRight animated">
+                <img src="./images/html5.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bootstrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 wow fadeInUpBig animated">
+                <img src="./images/Bootstrap.jpg">
+            </div>
+            <div class="col-sm-6 wow fadeInUpBig animated">
+                <h1>Bootstrap实战视频教程</h1>
+                <p>Bootstrap是最受欢迎的HTML、CSS和JS框架，用于开发响应式布局、移动设备优先的WEB项目</p>
+                <p><i class="glyphicon glyphicon-grain text-icon"></i>你的网站和应用特征能在Bootstrap的帮助下通过同一份代码快速、有效的适配手机、平板、PC设备。</p>
+                <p><i class="glyphicon glyphicon-grain text-icon"></i>Bootstrap提供了全面、美观的文档。你能在这里找到关于HTML元素、HTML和CSS组件、jQuery插件方面的所有详细文档</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="course">
+    <div class="container wow fadeIn animated">
+        <div class="row text-center">
+            <h2>最新课程</h2>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="list">
+                <img src="./images/swift.jpg">
+                <a class="btn btn-default btn-custom" href="">加入学习</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="download">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 wow fadeInUp animated">
+                <h1>麦子学院移动APP下载</h1>
+                <p>全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语言搜索课程，喊出你想要的课程，
+                    一键收藏，方便自己重复学习，离线下载课程，在哪儿都能开！</p>
+                <div class="icon">
+                    <p><span class="glyphicon glyphicon-save"></span> iPhone版</p>
+                    <p><span class="glyphicon glyphicon-save"></span> Android版</p>
+                </div>
+            </div>
+            <div class="col-sm-6 wow fadeInUp animated">
+                <img src="./images/app-banner.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map">
+    <div class="link-wheat">
+        <div class="container">
+            <div class="col-sm-6 wow bounceInLeft animated">
+                <h1><span class="glyphicon glyphicon-send"></span> 联系小麦</h1>
+                <p>麦子学院是成都麦子信息技术有限公司旗下一个IT在线教育平台，目前已有30万注册用户，
+                    10万以上APP下载量，5000小时视频内容，我们从不说空话，专注于IT在线教育，脱离传统
+                教育束缚，让你走到哪学到哪，想学就学。逗逼的老师，贴心的助教，在这你能感受到来自五湖四海
+                伙伴们热情和踏实的学习态度！</p>
+                <p><span class="glyphicon glyphicon-home"></span> 地址：成都市高新区天府软件园D5-11</p>
+                <p><span class="glyphicon glyphicon-phone-alt"></span> 联系电话：028-86567913</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> 邮箱：hr@maiziedu.com</p>
+            </div>
+            <div class="col-sm-6 wow bounceInRight animated">
+                <form class="form-inline inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control square length" placeholder="您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control square length length-2" placeholder="您的邮箱">
+                    </div>
+                </form>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control square" placeholder="标题">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control square" rows="4" placeholder="请输入留言内容"></textarea>
+                    </div>
+                    <a class="btn btn-default btn-submit" href="">提交</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        Copyright @2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+    </div>
+</div>
+
+<script src="./js/wow.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    new WOW().init();
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+</body>
+</html>

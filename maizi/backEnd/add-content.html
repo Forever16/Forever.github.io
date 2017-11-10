@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加内容</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        .footer{
+            padding:30px 0 70px ;
+            text-align: center;
+        }
+        .col-xs-10 form{
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Maizi Admin</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="backpage.html"><span class="glyphicon glyphicon-home"></span> 后台首页</a></li>
+                <li><a href="user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                <li  class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+                <li><a href="label.html"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人主页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span> 账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            <div class="list-group">
+                <a href="content.html" class="list-group-item">内容管理</a>
+                <a href="#" class="list-group-item active">添加内容</a>
+            </div>
+        </div>
+        <div class="col-xs-10">
+            <label>内容管理</label>
+            <hr>
+            <ul class="nav nav-tabs">
+                <li role="presentation"><a href="content.html">内容管理</a></li>
+                <li role="presentation"  class="active"><a href="#">添加内容</a></li>
+            </ul>
+            <form action="">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">标题</label>
+                    <input type="text" class="form-control" placeholder="Text input">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">文章内容</label>
+                    <textarea class="form-control form-group" rows="9" placeholder="请输入留言内容"></textarea>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">全局置顶
+                        </label>
+                        <button type="submit" class="btn btn-default pull-right">发布文章</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <nav aria-label="Page navigation" class="pull-right">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active">
+                <span>1 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <span>2 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <span>3 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <span>4 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <span>5 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <span>6 <span class="sr-only">(current)</span></span>
+            </li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="footer">
+    <div class="container">
+        Copyright @2012-2015 www.maiziedu.com 蜀ICP备13014270号-4
+    </div>
+</div>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>
